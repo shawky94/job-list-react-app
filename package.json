@@ -1,0 +1,55 @@
+{
+  "name": "PrototypeJobs",
+  "version": "0.0.5",
+  "private": true,
+  "scripts": {
+    "react-devtools": "react-devtools",
+    "lint": "node_modules/.bin/eslint app --fix",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "build:ios": "react-native run-ios --configuration Release",
+    "build:android": "react-native run-android --variant=release"
+  },
+  "dependencies": {
+    "immutability-helper": "^2.5.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-native": "^0.50.4",
+    "react-native-router-flux": "^4.0.0-beta.24",
+    "react-native-svg": "^5.5.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.6.0",
+    "redux-persist": "^4.10.1",
+    "redux-thunk": "^2.1.0"
+  },
+  "rnpm": {
+    "assets": [
+      "./app/assets"
+    ]
+  },
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-preset-react-native": "^4.0.0",
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^21.2.1",
+    "mocha": "^4.0.1",
+    "react-devtools": "^3.0.0",
+    "react-test-renderer": "^16.2.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "testRegex": "./__tests__/[^setup].*.js$",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|native-base|react-navigation|mobx-react)"
+    ],
+    "setupFiles": [
+      "./__tests__/setup.js"
+    ]
+  }
+}
